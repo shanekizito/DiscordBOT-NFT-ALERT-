@@ -18,6 +18,7 @@ const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks
 const require = createRequire(import.meta.url); // construct the require method
 
 const config= require("./config.json") // use the require method
+
 require('dotenv').config();
 
 
