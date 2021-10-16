@@ -7,18 +7,18 @@ import { createRequire } from "module"; // Bring in the ability to create the 'r
 import { match } from 'assert/strict';
 
 
-
 const json = JSON.parse(await readFile(new URL('./config.json', import.meta.url)));
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 
- const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks/807012249168248832/r2DPQ2TdmpjdwSWJnK5INZZdf8wTpXnsfU8ris2xdgI__UMLyn0eMYvIE4oojOnO5YLH' });
-
+const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks/807012249168248832/r2DPQ2TdmpjdwSWJnK5INZZdf8wTpXnsfU8ris2xdgI__UMLyn0eMYvIE4oojOnO5YLH' });
 
 
 const require = createRequire(import.meta.url); // construct the require method
+
 const config= require("./config.json") // use the require method
+require('dotenv').config();
 
 
 client.once("ready", () => {
@@ -68,7 +68,7 @@ setInterval(function(){
        
         // console.log(match,listName)
        
-        if(match<5 ) {
+        if(match<1 ) {
         let i;
       
         listCollection.push(listID);
@@ -245,7 +245,7 @@ fetch('https://api.opensea.io/api/v1/events?account_address=0xd387a6e4e84a6c86bd
   
   
   }
-  
+
 }).catch(err => console.error(err));
 
 
@@ -256,4 +256,4 @@ fetch('https://api.opensea.io/api/v1/events?account_address=0xd387a6e4e84a6c86bd
    
  
 
-client.login(config.token);
+client.login(process.env.token);
