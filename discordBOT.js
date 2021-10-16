@@ -12,7 +12,7 @@ const json = JSON.parse(await readFile(new URL('./config.json', import.meta.url)
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 
-const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks/807012249168248832/r2DPQ2TdmpjdwSWJnK5INZZdf8wTpXnsfU8ris2xdgI__UMLyn0eMYvIE4oojOnO5YLH' });
+const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks/892827914712809513/U9gbyNUEqAiNEQGlZSTHFPZBk1yByGbpvTsATWnMuDm_vrq7xiAAKTvrPBhoO0I5lnux' });
 
 
 const require = createRequire(import.meta.url); // construct the require method
