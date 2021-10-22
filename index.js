@@ -3,7 +3,7 @@ import { readFile } from 'fs/promises';
 import Discord from "discord.js";
 import{ Client, MessageEmbed, Intents,WebhookClient } from 'discord.js'
 import fetch from 'node-fetch';
-import { createRequire } from "module"; // Bring in the ability to create the 'require' method
+import { createRequire } from "module"; // Bring in the ability to create the 'require' 
 import { match } from 'assert/strict';
 
 
