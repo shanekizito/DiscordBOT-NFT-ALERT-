@@ -1,8 +1,8 @@
 
 {
   "type": "module",
-  "webhookToken": "r2DPQ2TdmpjdwSWJnK5INZZdf8wTpXnsfU8ris2xdgI__UMLyn0eMYvIE4oojOnO5YLH",
-  "webhookID": "807012249168248832"
+  "webhookToken": "example.token",
+  "webhookID": "example.id"
   "detail":"example.com"
 }
 
